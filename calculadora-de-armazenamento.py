@@ -24,6 +24,16 @@ def KBparabyte(valorASerConvertido):
     byteCalculado = valorASerConvertido * constante_de_conversão
     return byteCalculado
 
+def KBparaMB(valorASerConvertido):
+    print('valor convertido de KB para byte')
+    MBCalculado = valorASerConvertido / constante_de_conversão
+    return MBCalculado
+
+def MBparaKB(valorASerConvertido):
+    print('valor convertido de KB para byte')
+    KBCalculado = valorASerConvertido * constante_de_conversão
+    return KBCalculado
+
 print('Insira o valor a ser convertido de bit para Byte')
 entradaDoTecladoValorASerConvertido  = converterStringParaFloat(input())
 valorConvertido = bitParaByte(entradaDoTecladoValorASerConvertido)
@@ -34,7 +44,16 @@ entradaDoTecladoValorASerConvertido = converterStringParaFloat(input())
 valorConvertido = byteparaKB(entradaDoTecladoValorASerConvertido)
 print(valorConvertido)
 
+print('Insira o valor a ser calculado de KB para MB')
+entradaDoTecladoValorASerConvertido = converterStringParaFloat(input())
+valorConvertido = KBparaMB(entradaDoTecladoValorASerConvertido)
+print(valorConvertido)
 
+
+print('Insira o valor a ser calculado de MB para KB')
+entradaDoTecladoValorASerConvertido = converterStringParaFloat(input())
+valorConvertido = MBparaKB(entradaDoTecladoValorASerConvertido)
+print(valorConvertido)
 
 print('Insira o valor a ser calculado de KB para Byte')
 entradaDoTecladoValorASerConvertido = converterStringParaFloat(input())
