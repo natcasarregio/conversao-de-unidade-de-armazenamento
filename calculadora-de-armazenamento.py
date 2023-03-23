@@ -25,14 +25,24 @@ def KBparabyte(valorASerConvertido):
     return byteCalculado
 
 def KBparaMB(valorASerConvertido):
-    print('valor convertido de KB para byte')
+    print('valor convertido de KB para MB')
     MBCalculado = valorASerConvertido / constante_de_conversão
     return MBCalculado
 
 def MBparaKB(valorASerConvertido):
-    print('valor convertido de KB para byte')
+    print('valor convertido de MB para KB')
     KBCalculado = valorASerConvertido * constante_de_conversão
     return KBCalculado
+
+def MBparaGB(valorASerConvertido):
+    print('valor convertido de MB para GB')
+    GBCalculado = valorASerConvertido / constante_de_conversão
+    return GBCalculado
+
+def GBparaMB(valorASerConvertido):
+    print('valor convertido de GB para MB')
+    MBCalculado = valorASerConvertido * constante_de_conversão
+    return MBCalculado
 
 print('Insira o valor a ser convertido de bit para Byte')
 entradaDoTecladoValorASerConvertido  = converterStringParaFloat(input())
@@ -49,6 +59,15 @@ entradaDoTecladoValorASerConvertido = converterStringParaFloat(input())
 valorConvertido = KBparaMB(entradaDoTecladoValorASerConvertido)
 print(valorConvertido)
 
+print('Insira o valor a ser calculado de MB para GB')
+entradaDoTecladoValorASerConvertido = converterStringParaFloat(input())
+valorConvertido = MBparaGB(entradaDoTecladoValorASerConvertido)
+print(valorConvertido)
+
+print('Insira o valor a ser calculado de GB para MB')
+entradaDoTecladoValorASerConvertido = converterStringParaFloat(input())
+valorConvertido = GBparaMB(entradaDoTecladoValorASerConvertido)
+print(valorConvertido)
 
 print('Insira o valor a ser calculado de MB para KB')
 entradaDoTecladoValorASerConvertido = converterStringParaFloat(input())
